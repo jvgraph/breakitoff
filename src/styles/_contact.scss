@@ -1,0 +1,73 @@
+.modal{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  width: 100%;
+  height: 100vh;
+  transition: all 300ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: -1;
+  &.modal--open{
+    z-index: 99;
+  }
+  .contact{
+    width: 450px;
+    height: 350px;
+    padding: 40px 45px;
+    margin: auto;
+    font-family: $press;
+    font-size: 15px;
+    h1{
+      font-size: 16px;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    &.fade-enter {
+      opacity: 0.01;
+    }
+    &.fade-enter-active {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+    }
+    &.fade-exit {
+      opacity: 1;
+    }
+    &.fade-exit-active {
+      opacity: 0.01;
+      transition: opacity 500ms ease-in;
+    }
+    &.open{
+      z-index: 99;
+    }
+    img{
+      max-width: 100%;
+      width: 200px;
+      height: 200px;
+    }
+    .row{
+      margin-bottom: 45px;
+    }
+  }
+  .email-h{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .container{
+    position: relative;
+    button{
+      position: absolute;
+      right: -10px;
+      top: -20px;
+      font-family: $press;
+      color: white;
+      background-color: transparent;
+      border: none;
+      font-size: 17px;
+    }
+  }
+}
