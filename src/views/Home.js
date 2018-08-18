@@ -11,10 +11,14 @@ class Home extends Component {
   }
   render() {
     const {open, handleContact} = this.props;
+    const logoStyles = {
+      backgroundImage: `url(${logo})`,
+      backgroundSize: 'contain'
+    }
     return (
       <div className="home">
         <div className="container">
-          <img src={logo} alt="break it off"/>
+          <div className="brand-logo" style={logoStyles} />
         </div>
         <TransitionGroup className={`modal${open ? " modal--open" : ""}`}>
           {open && (

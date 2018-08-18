@@ -1,5 +1,6 @@
 html{
   font-size: 14px;
+  height: 100%;
 }
 body{
   margin: 0;
@@ -8,4 +9,9 @@ body{
   font-family: $sans;
   padding-top: 70px;
   letter-spacing: 0.125rem;
+  height: calc(100% - 70px);
+}
+#root, .App{
+  height: 100%;
+  width: 100%;
 }
