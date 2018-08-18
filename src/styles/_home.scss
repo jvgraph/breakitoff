@@ -1,0 +1,9 @@
+.home{
+  @include _container;
+  width: 100%;
+  text-align: center;
+  img{
+    width: auto;
+    height: calc(100vh - 120px);
+  }
+}

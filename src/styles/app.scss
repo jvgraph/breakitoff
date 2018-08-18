@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Righteous');
+
+$press: 'Press Start 2P', cursive;
+$sans: 'Righteous', cursive;
+@import "var";
+@import "global";
 @import "footer";
-body{
-  margin: 0;
-  padding: 0;
-  background-color: #f1f2f2;
-}
+@import "header";
+@import "nav";
+@import "home";
+@import "contact";

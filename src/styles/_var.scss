@@ -1,0 +1,9 @@
+$maxWidth: 1500px;
+$tablet: 1000px;
+$mobile: 768px;
+
+@mixin _container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 20px;
+}

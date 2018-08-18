@@ -1,5 +1,21 @@
 footer{
   position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
   background-color: black;
   height: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
 }

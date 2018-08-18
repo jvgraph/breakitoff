@@ -1,0 +1,20 @@
+.nav{
+  align-self: flex-end;
+  margin: 0 0 0 auto;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    height: 65px;
+    line-height: 65px;
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+        color: black;
+        font-family: $press;
+      }
+    }
+  }
+}
