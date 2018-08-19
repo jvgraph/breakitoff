@@ -1,3 +1,10 @@
+* {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+
 html {
   font-size: 14px;
   height: 100%;
@@ -41,4 +48,23 @@ body {
 .page-transition-exit.page-transition-exit-active {
   opacity: 0.01;
   transition: opacity 500ms ease-in;
+}
+
+////
+.modal-fade-transition-enter {
+  opacity: 0.01;
+}
+
+.modal-fade-transition-enter.modal-fade-transition-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.modal-fade-transition-exit {
+  opacity: 1;
+}
+
+.modal-fade-transition-exit.modal-fade-transition-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }

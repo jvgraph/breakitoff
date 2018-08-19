@@ -1,15 +1,14 @@
 const data = [
   {
-    title: "delancy",
-    id: 1
-  },
-  {
-    title: "another event",
-    id: 2
-  },
-  {
-    title: "future event",
-    id: 3
+    title: "Sound The Groove!",
+    id: 1,
+    date: "Friday, August 24th, 2018",
+    time: "6:00PM",
+    place: "The Delancey Underground",
+    address: "168 Delancet St, New York, NY 10002",
+    ticket: 15,
+    age: 21,
+    image: "./images/breakitoff.jpg"
   }
 ];
 export default data;
