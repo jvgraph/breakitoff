@@ -36,9 +36,43 @@ const EventModal = ({ eventId, handleCloseModal }) => {
         </button>
         <div className="event--title">{event.title}</div>
         <div className="event--date">{`${event.date} @${event.time}`}</div>
-        <div className="event--location">{`WHERE ${event.place}`}</div>
-        <div className="event--address">{`WHERE ${event.address}`}</div>
+        <div className="event--location">{`@ ${event.place}`}</div>
+        <div className="event--address">{`@ ${event.address}`}</div>
       </div>
+      <script type="application/ld+json">
+      {`{
+        "@context": "http://schema.org",
+        "@type": "Event",
+        "name": "SOUND THE GROOVE!",
+        "startDate": "2018-08-24T18:00",
+        "endDate": "2018-08-24T23:55",
+        "performer": {
+          "@type": "PerformingGroup",
+          "name": "Break it Off"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "The Delancey Underground",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "168 Delancet St",
+            "addressLocality": "New York",
+            "addressRegion": "",
+            "postalCode": "10002",
+            "addressCountry": "US"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "name": "Ticket",
+          "price": "15",
+          "priceCurrency": "USD",
+          "validFrom": "2018-08-19T14:55",
+          "url": "",
+          "availability": ""
+        }
+      }`}
+      </script>
     </div>
   ));
 };
