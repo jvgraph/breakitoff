@@ -13,7 +13,7 @@ class Home extends Component {
       backgroundSize: "contain"
     };
     return (
-      <div className="home">
+      <div className="home page">
         <div className="container">
           <div className="brand-logo" style={logoStyles} />
         </div>

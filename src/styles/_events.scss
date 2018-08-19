@@ -2,11 +2,18 @@
   text-align: center;
   h1 {
     font-family: $press;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
   }
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    .event {
+      margin-bottom: 30px;
+      .event--title {
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+    }
   }
 }
