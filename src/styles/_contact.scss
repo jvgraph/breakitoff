@@ -1,4 +1,4 @@
-.modal{
+.modal {
   position: fixed;
   top: 0;
   width: 100%;
@@ -10,20 +10,20 @@
   align-items: center;
   color: white;
   z-index: -1;
-  &.modal--open{
+  &.modal--open {
     z-index: 99;
   }
-  .contact{
+  .contact {
     width: 450px;
-    height: 350px;
+    min-height: 350px;
     padding: 40px 45px;
     margin: auto;
     font-family: $press;
     font-size: 15px;
-    h1{
+    h1 {
       font-size: 16px;
     }
-    a{
+    a {
       color: white;
       text-decoration: none;
     }
@@ -41,25 +41,25 @@
       opacity: 0.01;
       transition: opacity 500ms ease-in;
     }
-    &.open{
+    &.open {
       z-index: 99;
     }
-    img{
+    img {
       max-width: 100%;
       width: 200px;
       height: 200px;
     }
-    .row{
+    .row {
       margin-bottom: 45px;
     }
   }
-  .email-h{
+  .email-h {
     margin-bottom: 15px;
     text-transform: uppercase;
   }
-  .container{
+  .container {
     position: relative;
-    button{
+    button {
       position: absolute;
       right: -10px;
       top: -20px;
