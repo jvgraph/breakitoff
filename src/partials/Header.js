@@ -7,9 +7,9 @@ export default class Header extends Component{
   static propTypes = {
     open: PropTypes.bool,
     handleContact: PropTypes.func,
-    
   }
   render(){
+
     return(
       <header>
         <div className="header--container">
