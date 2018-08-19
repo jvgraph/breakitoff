@@ -6,7 +6,8 @@ const logo = require("../images/logo.svg")
 export default class Header extends Component{
   static propTypes = {
     open: PropTypes.bool,
-    handleContact: PropTypes.func
+    handleContact: PropTypes.func,
+    
   }
   render(){
     return(
