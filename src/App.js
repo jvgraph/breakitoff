@@ -4,15 +4,12 @@ import Header from "./partials/Header";
 import Footer from "./partials/Footer";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
+import Events from "./views/Events";
 import { Switch, Route } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import createBrowserHistory from "history/createBrowserHistory";
 const history = createBrowserHistory();
-
-const Event = () => {
-  return <div>events page</div>;
-};
 
 class App extends Component {
   constructor(props) {
@@ -36,6 +33,15 @@ class App extends Component {
   };
   componentDidUpdate(prevProps, prevState, snapshot) {
     this.handleNavClick();
+    if (prevState.location !== this.state.location) {
+      const { location } = this.state;
+      switch (location) {
+        case "/events":
+          return (document.title = "event width | Break it Off");
+        default:
+          return (document.title = "Break it off");
+      }
+    }
   }
   render() {
     const { open } = this.state;
@@ -63,7 +69,7 @@ class App extends Component {
                   />
                 )}
               />
-              <Route exact path="/events" component={Event} />
+              <Route exact path="/events" component={Events} />
             </Switch>
           </CSSTransition>
         </TransitionGroup>

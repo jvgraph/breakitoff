@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Righteous');
-
-$press: 'Press Start 2P', cursive;
-$sans: 'Righteous', cursive;
+$press: 'Press Start 2P',
+cursive;
+$sans: 'Righteous',
+cursive;
 @import "var";
 @import "global";
 @import "footer";
@@ -9,3 +10,4 @@ $sans: 'Righteous', cursive;
 @import "nav";
 @import "home";
 @import "contact";
+@import "events";
