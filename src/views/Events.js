@@ -9,6 +9,8 @@ const Event = ({ handleEventClick }) => {
       <div onClick={() => handleEventClick(event.id)} className="event--title">
         {event.title}
       </div>
+      <div className="event--date">{`${event.date} @${event.time}`}</div>
+      <div className="event--location">{`@ ${event.place}`}</div>
     </li>
   ));
 };
@@ -29,19 +31,24 @@ Event.propTypes = {
 const EventModal = ({ eventId, handleCloseModal }) => {
   return data.filter(event => event.id === eventId).map(event => (
     <div className="event--modal-container" key={event.id}>
-      {console.log("event id ", eventId)}
       <div className="modal-content">
         <button className="close-modal" onClick={() => handleCloseModal()}>
           X
         </button>
-        <img src={event.image} alt={event.title} draggable={false} />
+        <img
+          src={require(`../images/${event.image}.jpg`)}
+          alt={event.title}
+          width={280}
+          height={280}
+          draggable={false}
+        />
         <div className="event--title">{event.title}</div>
         <div className="event--date">{`${event.date} @${event.time}`}</div>
         <div className="event--location">{`@ ${event.place}`}</div>
         <div className="event--address">{`@ ${event.address}`}</div>
       </div>
       <script type="application/ld+json">
-      {`{
+        {`{
         "@context": "http://schema.org",
         "@type": "Event",
         "name": "SOUND THE GROOVE!",
@@ -125,7 +132,7 @@ class Events extends Component {
   render() {
     return (
       <div className={`events page`}>
-        <h1>Break it off Events</h1>
+        <h1>Break it Off Events</h1>
         <ul className="event--list">{this.renderEvents()}</ul>
         <TransitionGroup
           className={`event--modal${

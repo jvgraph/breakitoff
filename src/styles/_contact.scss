@@ -13,7 +13,7 @@
     z-index: 99;
   }
   .contact {
-    max-width: 450px;
+    max-width: 400px;
     min-height: 350px;
     padding: 40px 45px;
     margin: auto;
@@ -45,9 +45,9 @@
       z-index: 99;
     }
     img {
-      max-width: 100%;
-      width: 200px;
-      height: 200px;
+      width: 100%;
+      max-width: 200px;
+      height: auto;
     }
     .row {
       margin-bottom: 45px;
