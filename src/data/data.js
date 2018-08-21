@@ -8,7 +8,7 @@ const data = [
     address: "168 Delancet St, New York, NY 10002",
     ticket: 15,
     age: 21,
-    image: "./images/breakitoff.jpg"
+    image: "breakitoff.jpg"
   }
 ];
 export default data;

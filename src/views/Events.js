@@ -34,6 +34,7 @@ const EventModal = ({ eventId, handleCloseModal }) => {
         <button className="close-modal" onClick={() => handleCloseModal()}>
           X
         </button>
+        <img src={event.image} alt={event.title} draggable={false} />
         <div className="event--title">{event.title}</div>
         <div className="event--date">{`${event.date} @${event.time}`}</div>
         <div className="event--location">{`@ ${event.place}`}</div>
