@@ -19,15 +19,7 @@ Event.propTypes = {
   handleEventClick: PropTypes.func,
   eventId: PropTypes.number
 };
-// title: "Sound The Groove!",
-// id: 1,
-// date: "Friday, August 24th, 2018",
-// time: "6:00PM",
-// place: "The Delancey Underground",
-// address: "168 Delancet St, New York, NY 10002",
-// ticket: 15,
-// age: 21,
-// image: "./images/breakitoff.jpg"
+
 const EventModal = ({ eventId, handleCloseModal }) => {
   return data.filter(event => event.id === eventId).map(event => (
     <div className="event--modal-container" key={event.id}>
