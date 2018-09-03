@@ -17,6 +17,11 @@ class Navigation extends Component {
             </Link>
           </li>
           <li>
+            <Link onClick={this.props.handleNavClick} to="/merch">
+              Merch
+            </Link>
+          </li>
+          <li>
             <a onClick={() => this.props.handleContact()}>contact</a>
           </li>
         </ul>

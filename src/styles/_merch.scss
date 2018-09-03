@@ -1,0 +1,16 @@
+.merch {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+
+  .title {
+    font-family: $press;
+    font-size: calc(14px + 1vw);
+  }
+
+  .container {
+    height: calc(100% - 40px);
+    @include _container;
+    padding: 20px;
+  }
+}

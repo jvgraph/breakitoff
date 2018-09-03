@@ -5,6 +5,7 @@ import Footer from "./partials/Footer";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
 import Events from "./views/Events";
+import Merch from "./views/Merch";
 import { Switch, Route } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
@@ -70,6 +71,7 @@ class App extends Component {
                 )}
               />
               <Route exact path="/events" component={Events} />
+              <Route exact path="/merch" render={() => <Merch />} />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
